@@ -1791,6 +1791,15 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			header.sss > :first-child:after {    /*單獨做一個變色線段給毛孩友善空間*/
+				content: '';
+				background-color: #d89632;
+				display: block;
+				height: 2px;
+				margin: 0.325em 0 0.5em 0;
+				width: 100%;
+			}
+
 		header.major > p {
 			font-size: 0.7em;
 			font-weight: 600;
@@ -2792,7 +2801,7 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0.5;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -2831,7 +2840,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+				background-color: #90c3d4;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
@@ -3410,12 +3419,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #a5aed6;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.5;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3481,7 +3490,7 @@ input, select, textarea {
 				}
 
 		#banner.major {
-			height: 75vh;
+			height: 50vh;
 			min-height: 30em;
 			max-height: 50em;
 		}
@@ -3583,6 +3592,46 @@ input, select, textarea {
 				#banner.major {
 					padding: 8em 0 4em 0 ;
 				}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner {
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGdqbzMzYTYyZ2llZzQxZ29rNWYyZGp2N3hxenFzNmxkbThtcmFwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TZtrTIbsL9EqYs77Sn/giphy.webp);
+			}
+
+		}
+
+		@media screen and (max-width: 1000px) {
+
+			#banner {
+				background-image: url();
+			}
+
+		}
+
+		@media screen and (max-width: 800px) {
+
+			#banner {
+				background-image: url();
+			}
+
+		}
+
+		@media screen and (max-width: 600px) {
+
+			#banner {
+				background-image: url();
+			}
+
+		}
+
+		@media screen and (max-width: 400px) {
+
+			#banner {
+				background-image: url();
+			}
 
 		}
 
