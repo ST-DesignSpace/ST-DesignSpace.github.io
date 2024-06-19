@@ -1920,7 +1920,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(212, 212, 255, 0.035);
+		background: rgba(255, 255, 255, 0.137);
 		border: none;
 		border-radius: 0;
 		color: inherit;
@@ -2863,6 +2863,7 @@ input, select, textarea {
 				background-color: #87c5a4;
 			}
 
+
 		@media screen and (max-width: 1280px) {
 
 			.tiles article {
@@ -3606,7 +3607,7 @@ input, select, textarea {
 		@media screen and (max-width: 1000px) {
 
 			#banner {
-				background-image: url();
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExejFvcjBuaGFwYWM5ZzI2a2dpamtobjBmOGRiN2M5dzd0dWZzY2N3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11sBLVxNs7v6WA/giphy.webp);
 			}
 
 		}
@@ -3614,7 +3615,7 @@ input, select, textarea {
 		@media screen and (max-width: 800px) {
 
 			#banner {
-				background-image: url();
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtvOTYxdW5ra2hpanQ2d3dkNDZ4NzBjNXJvajlzNmV5ZnFvMzU4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZBEnmms00tJt6ZlFtF/giphy.webp);
 			}
 
 		}
@@ -3622,7 +3623,7 @@ input, select, textarea {
 		@media screen and (max-width: 600px) {
 
 			#banner {
-				background-image: url();
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXZubDFlc2NyajhlZDh0NmZqbXE1NmRzNWVpODFqbG4ybmRxY2NvMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ge86XF8AVY1KE/giphy.webp);
 			}
 
 		}
@@ -3630,15 +3631,22 @@ input, select, textarea {
 		@media screen and (max-width: 400px) {
 
 			#banner {
-				background-image: url();
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWsxaHB4MDZuejByNWNwanNhMmx0Z29wZW51bmoxNDRobGkxZ2lubSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hZj44bR9FVI3K/giphy.webp);
 			}
 
 		}
 
 /* Main */
 
-	#main {
-		background-color: #2a2f4a;
+	#two {
+		background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHFwNHRmeGtkODM2eGMyeHRmOTcxb3d5aHlndzF6Z2wxc3htejkwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5xJIIRPC23yZG/giphy.webp);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #242943;
+		display: block;
+		position: relative;
+		height: 320px;
 	}
 
 		#main > * {
@@ -3999,3 +4007,15 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+.mask {
+	display: block;
+	position: absolute;
+	width: 10000px;
+	height: 320px;
+	background-color: #0c0c27d0;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
