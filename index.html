@@ -82,7 +82,7 @@
 								</article>
 								<article style="background-size: cover">
 									<span class="image">
-										<img style="width: 300px;" src="images/article-599d4e4151704.jpg" alt="" />
+										<img style="width: 300px;" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmg1Z2hucmY1NGQ0MGwycWRwYzh2N24xOW5ldTV6Y3ZzYXRtdXN5ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H3HYBJrK2PgMUWDobZ/giphy.webp" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">居家住宅空間</a></h3>
@@ -141,14 +141,14 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="post" action="#" onsubmit="return mailto()">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">您的姓名</label>
+											<span class="icon icon2 solid alt fa-star">您的姓名</span>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
-											<label for="email">Email</label>
+											<span class="icon icon2 solid alt fa-star">Email</span>
 											<input type="text" name="email" id="email" />
 										</div>
 										<div class="field">
@@ -157,30 +157,40 @@
 										</div>
 									</div>
 									<ul class="actions">
+										<li><span class="icon icon3 solid alt fa-paper-plane" onclick="mailto()"></span></li>
 										<li><input type="submit" value="傳送" class="primary" /></li>
 										<li><input type="reset" value="清除" /></li>
 									</ul>
+									<script>
+										function mailto() {
+											name = document.getElementsByName('name')[0].value; // 把使用者輸入的名稱拿出來用
+											email = document.getElementsByName('email')[0].value; // 把使用者輸入的email拿出來用
+											message = document.getElementsByName('message')[0].value.replaceAll('\n', '%0D%0A'); // 把使用者輸入的內容拿出來用
+											window.location.href = "mailto:test@gmail.com?subject=我沒有問題&body=您好, 我是" + name + ":%0D%0A" + message;
+											return false;
+										}
+									</script>
 								</form>
 							</section>
 							<section class="split">
 								<section>
 									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
+										<span style="font-size: 1.08em" class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
 										<a href="#">information@untitled.tld</a>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
+										<span style="font-size: 1.08em" class="icon solid alt fa-phone"></span>
 										<h3>電話</h3>
 										<span>(000) 000-0000 x12387</span>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
-										<span class="icon brands alt fa-line"></span>
-										<h3 style="font-size: 1.5em;">Line</h3>
+										<span style="font-size: 1.08em" class="icon brands alt fa-line"></span>
+										<h3 style="font-size: 1.3em;">Line</h3>
 										<span>@000_0000</span>
 									</div>
 								</section>
@@ -199,7 +209,7 @@
 								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; copyright</li><li>Design: <a href="https://html5up.net" target="_blank">ST</a></li>
 							</ul>
 						</div>
 					</footer>

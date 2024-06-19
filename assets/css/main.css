@@ -99,8 +99,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
-	}
+		background: #000000;
+	} /*更改了聯絡資訊區的背景顏色，不過他更動的是網頁整個的底色塊*/
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -2152,6 +2152,31 @@ input, select, textarea {
 			width: 2em;
 		}
 
+		.icon2.alt:before {
+			background-color: #ffffff00;
+			border-radius: 10%;
+			color: #ffffff;
+			display: inline-block;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			width: 2em;
+		} /*這裡新增了新的icon樣式，要在html檔案內的指定icon class裡，再多加上icon2才有反應*/
+
+		.icon3.alt:before {
+			background-color: #ffffff;
+			border-radius: 0%;
+			color: #242943;
+			display: inline-block;
+			height: 2.85em;
+			line-height: 2em;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			width: 10em;
+		} /*這裡直接用icon做了一個傳送的功能，因為他是圖示字型，對齊會依照字型底線做為參考基準，所以加了其他一些對齊去強迫它置中*/
+
 	a.icon.alt:before {
 		-moz-transition: background-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out;
@@ -3124,7 +3149,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #000000;  /*更改了網頁最上面的小劉海*/
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -4013,7 +4038,7 @@ input, select, textarea {
 	position: absolute;
 	width: 10000px;
 	height: 320px;
-	background-color: #0c0c27d0;
+	background-color: #10102ed0;
 	left: 0;
 	top: 0;
 	z-index: 0;
