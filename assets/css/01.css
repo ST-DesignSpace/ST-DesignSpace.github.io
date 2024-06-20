@@ -99,8 +99,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
-	}
+		background: #000000;
+	} /*更改了聯絡資訊區的背景顏色，不過他更動的是網頁整個的底色塊*/
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -1791,6 +1791,24 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			header.major2 > :first-child:after {  /*用width把線隱藏並命名major2*/
+				content: '';
+				background-color: #ffffff;
+				display: block;
+				height: 2px;
+				margin: 0.325em 0 0.5em 0;
+				width: 0%;
+			}
+
+			header.sss > :first-child:after {    /*單獨做一個變色線段給毛孩友善空間，但影響到了下面的p*/
+				content: '';
+				background-color: #ffa827;
+				display: block;
+				height: 2px;
+				margin: 0.325em 0 0.5em 0;
+				width: 100%;
+			}
+
 		header.major > p {
 			font-size: 0.7em;
 			font-weight: 600;
@@ -1911,7 +1929,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(212, 212, 255, 0.035);
+		background: rgba(255, 255, 255, 0.137);
 		border: none;
 		border-radius: 0;
 		color: inherit;
@@ -2142,6 +2160,31 @@ input, select, textarea {
 			text-align: center;
 			width: 2em;
 		}
+
+		.icon2.alt:before {
+			background-color: #ffffff00;
+			border-radius: 10%;
+			color: #ffffff;
+			display: inline-block;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			width: 2em;
+		} /*這裡新增了新的icon樣式，要在html檔案內的指定icon class裡，再多加上icon2才有反應*/
+
+		.icon3.alt:before {
+			background-color: #ffffff;
+			border-radius: 0%;
+			color: #242943;
+			display: inline-block;
+			height: 2.85em;
+			line-height: 2em;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			width: 10em;
+		} /*這裡直接用icon做了一個傳送的功能，因為他是圖示字型，對齊會依照字型底線做為參考基準，所以加了其他一些對齊去強迫它置中*/
 
 	a.icon.alt:before {
 		-moz-transition: background-color 0.2s ease-in-out;
@@ -2792,7 +2835,7 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0.5;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -2831,7 +2874,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+				background-color: #90c3d4;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
@@ -2853,6 +2896,7 @@ input, select, textarea {
 			.tiles article:nth-child(6n):before {
 				background-color: #87c5a4;
 			}
+
 
 		@media screen and (max-width: 1280px) {
 
@@ -3114,7 +3158,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #000000;  /*更改了網頁最上面的小劉海*/
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3410,12 +3454,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #a5aed6;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.5;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3481,7 +3525,7 @@ input, select, textarea {
 				}
 
 		#banner.major {
-			height: 75vh;
+			height: 50vh;
 			min-height: 30em;
 			max-height: 50em;
 		}
@@ -3586,10 +3630,57 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 1280px) {
+
+			#banner {
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGdqbzMzYTYyZ2llZzQxZ29rNWYyZGp2N3hxenFzNmxkbThtcmFwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TZtrTIbsL9EqYs77Sn/giphy.webp);
+			}
+
+		}
+
+		@media screen and (max-width: 1000px) {
+
+			#banner {
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExejFvcjBuaGFwYWM5ZzI2a2dpamtobjBmOGRiN2M5dzd0dWZzY2N3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11sBLVxNs7v6WA/giphy.webp);
+			}
+
+		}
+
+		@media screen and (max-width: 800px) {
+
+			#banner {
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtvOTYxdW5ra2hpanQ2d3dkNDZ4NzBjNXJvajlzNmV5ZnFvMzU4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZBEnmms00tJt6ZlFtF/giphy.webp);
+			}
+
+		}
+
+		@media screen and (max-width: 600px) {
+
+			#banner {
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXZubDFlc2NyajhlZDh0NmZqbXE1NmRzNWVpODFqbG4ybmRxY2NvMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ge86XF8AVY1KE/giphy.webp);
+			}
+
+		}
+
+		@media screen and (max-width: 400px) {
+
+			#banner {
+				background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWsxaHB4MDZuejByNWNwanNhMmx0Z29wZW51bmoxNDRobGkxZ2lubSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hZj44bR9FVI3K/giphy.webp);
+			}
+
+		}
+
 /* Main */
 
-	#main {
-		background-color: #2a2f4a;
+	#two {
+		background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHFwNHRmeGtkODM2eGMyeHRmOTcxb3d5aHlndzF6Z2wxc3htejkwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5xJIIRPC23yZG/giphy.webp);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #242943;
+		display: block;
+		position: relative;
+		height: 320px;
 	}
 
 		#main > * {
@@ -3950,3 +4041,15 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+.mask {
+	display: block;
+	position: absolute;
+	width: 10000px;
+	height: 320px;
+	background-color: #10102ed0;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
