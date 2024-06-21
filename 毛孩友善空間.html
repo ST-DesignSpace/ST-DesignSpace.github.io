@@ -11,16 +11,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	<body class="is-preload">
-
+		<!-- <a href="#banner" class="back-btn">👆</a> -->
+		<a href="#banner" class="back-btn"><img class="back-img" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN25wdjRwc2VlOWZwNzdsZmhxcnF3ZWlyNHBxZTV3ZHU0d291cWJpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/t37jBEYfO0DcY/giphy.webp" /></a>
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
 					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>ST</strong> <span>by stdesignspace</span></a>
+						<a href="index.html#pet" class="logo"><strong>ST</strong> <span>by stdesignspace</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -48,7 +50,7 @@
 								<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm92bGhjaWI4MWR5OXQzMnp4c2w2Zzl1MzRheXJxNTZ3emFtdDRsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aARrpI7nQkaxcsD8t3/giphy.webp" alt="" />
 							</span>
 							<header class="major">
-								<h1>毛孩友善空間</h1>
+								<h1 class="animate__animated animate__headShake animate__infinite animate__slower">毛孩友善空間</h1>
 							</header>
 							<div class="content">
 								<p>動物友善空間是指為動物提供安全、舒適和支持其自然行為的環境。<br />
@@ -74,7 +76,7 @@
 							<section id="two" class="spotlights">
 								<section>
 									<a href="generic.html" class="image">
-										<img src="images/柯基.jpg " alt="" data-position="center center"/>
+										<img class="animate__animated animate__slideInLeft" src="images/柯基.jpg " alt="" data-position="center center"/>
 									</a>
 									<div class="content">
 										<div class="inner">
@@ -91,7 +93,7 @@
 								<section>
 									<!--<a href="generic.html" class="image">-->
 										<!--<img src="images/pic09.jpg" alt="" data-position="top center" />-->
-										<iframe width="530" height="360" src="https://www.youtube.com/embed/4YH06IzaUEk" title="60 Dog Room Ideas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+										<div data-aos="fade-up"><iframe width="600" height="400" src="https://www.youtube.com/embed/4YH06IzaUEk" title="60 Dog Room Ideas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 									<!--</a>-->
 									<div class="content">
 										<div class="inner">
@@ -107,7 +109,7 @@
 								</section>
 								<section>
 									<a href="generic.html" class="image">
-										<img src="images/貓狗.jpg" alt="" data-position="25% 25%" style="width: 100%;height: 100%"/>
+										<div data-aos="fade-up"><img src="images/貓狗.jpg" alt="" data-position="25% 25%" style="width: 100%;height: 100%"/></div>
 									</a>
 									<div class="content">
 										<div class="inner">
@@ -127,7 +129,7 @@
 							<section id="three">
 								<div class="inner">
 									<header class="major">
-										<h2>作品集</h2>
+										<h2 class="kk">作品集</h2>
 									</header>
 									<p>了解更多關於動物友善空間的作品內容。</p>
 									<ul class="actions">
@@ -208,6 +210,11 @@
 					</footer>
 
 			</div>
+
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script>
+				AOS.init();
+			  </script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

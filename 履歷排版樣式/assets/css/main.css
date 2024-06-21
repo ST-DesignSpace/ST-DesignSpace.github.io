@@ -2017,6 +2017,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			font-size:medium; /*有把icon縮小至適中大小*/
 		}
 
 		.icon > .label {
@@ -2033,6 +2034,17 @@ input, select, textarea {
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
+		}
+		
+		.icon.alt:before {
+			background-color: #ffffff00; /*自行在其他樣板複製新增過來的icon css*/
+			border-radius: 100%;
+			color: #a0a0a0;  /*讓icon跟字型統一顏色*/
+			display: inline-block;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			width: 2em;
 		}
 
 /* Image */
